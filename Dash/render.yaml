@@ -1,0 +1,11 @@
+previews:
+  generation: automatic # Enable preview environments
+
+services:
+  - type: web
+    runtime: python
+    name: spacex-dash-app
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    region: oregon  # Replace with your preferred region, e.g., frankfurt for Europe
