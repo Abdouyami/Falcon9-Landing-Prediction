@@ -1,6 +1,7 @@
 previews:
   generation: automatic # Enable preview environments
 
+# configuration 
 services:
   - type: web
     runtime: python
