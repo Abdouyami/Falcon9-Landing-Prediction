@@ -6,7 +6,10 @@ services:
   - type: web
     runtime: python
     name: spacex-dash-app
-    plan: free
+    repo: https://github.com/Abdouyami/Falcon9-Landing-Prediction.git
+    region: frankfurt
+    plan: starter
+    branch: dash-app
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    region: oregon  # Replace with your preferred region, e.g., frankfurt for Europe
+    startCommand: spacex-dash-app
+    
