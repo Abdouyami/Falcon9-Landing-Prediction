@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "wsgi.py",
+            "src": "spacex_dash_app.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "wsgi.py"
+            "src": "(.*)",
+            "dest": "spacex_dash_app.py"
         }
     ]
 }
